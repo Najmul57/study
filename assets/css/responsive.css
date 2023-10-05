@@ -1,0 +1,96 @@
+/* 400 */
+@media(min-width: 400px) {
+    .header_contact {
+        text-align: center !important;
+    }
+
+
+
+}
+
+/* 576 */
+@media(min-width: 576px) {}
+
+/* 768 */
+@media(min-width: 767px) {}
+
+/* 1024 */
+@media(min-width: 992px) {}
+
+/* 1240 */
+@media(min-width: 1200px) {}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .university__contact {
+        height: 100px;
+    }
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .university__contact {
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 790px) {
+    .service__hover {
+        padding: 5px;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .university__contact {
+        height: 100px;
+    }
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .slider__content h2 {
+        font-size: 35px;
+        list-style: 1;
+    }
+
+    .single__count h4 {
+        letter-spacing: 0;
+        font-size: 18px;
+    }
+
+    .single__count img {
+        width: 60px;
+    }
+
+    .single__count h2 {
+        font-size: 30px;
+    }
+
+    .section__heading h2 {
+        font-size: 30px;
+    }
+
+    .section__heading p {
+        font-size: 25px;
+    }
+
+    .university__contact h5 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .banner__active .slick-dots {
+        justify-content: end;
+        margin-right: 20px;
+    }
+
+    .single__slider {
+        min-height: 450px !important;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
