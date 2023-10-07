@@ -90,6 +90,36 @@
     .single__slider {
         min-height: 450px !important;
     }
+
+    /* study abroad */
+    .breadcrumb__area {
+        padding: 50px 0;
+    }
+
+    .breadcrumb__area h2 {
+        font-size: 30px;
+    }
+
+    .study_country_headline,
+    .study_country_headline span {
+        font-size: 30px;
+    }
+
+
+    .single__scholarship {
+        display: block !important;
+    }
+
+    .scholarship__thumbnail,
+    .scholarship__content {
+        width: 100%;
+    }
+
+    .scholarship__thumbnail h6 {
+        font-size: 20px;
+    }
+
+
 }
 
 /* Large Mobile :480px. */

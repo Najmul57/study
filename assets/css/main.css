@@ -258,7 +258,7 @@ a.dropdown_button.active {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #4555F4;
+    background-color: #000;
     opacity: .3;
     z-index: -1;
 }
@@ -314,8 +314,8 @@ a.dropdown_button.active {
 }
 
 .banner__active .slick-dots {
-    margin-top: -40px;
     position: inherit;
+    top: -50px;
 }
 
 /* slider end */
@@ -354,6 +354,115 @@ a.dropdown_button.active {
 }
 
 /* count success end */
+
+/* scholarship start */
+.scholarship__area #nav-tab {
+    display: flex;
+    justify-content: center;
+    border: none;
+    gap: 5px;
+}
+
+.scholarship__area #nav-tab button.nav-link {
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.scholarship__area #nav-tab button.nav-link.active {
+    border: none;
+    opacity: .8;
+}
+
+.single__scholarship {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 50px 20px;
+    transition: var(--transition);
+    gap: 20px;
+}
+
+.single__scholarship:hover {
+    transform: translateY(-5px);
+}
+
+.scholarship__thumbnail img {
+    width: 80%;
+    margin: auto;
+}
+
+.scholarship__thumbnail {
+    display: flex;
+    /* border-right: 1px solid var(--main-color); */
+    flex-direction: column;
+    text-align: center;
+}
+
+.scholarship__content ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    list-style: disc;
+}
+
+.scholarship__content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.scholarship__thumbnail,
+.scholarship__content {
+    width: 50%;
+}
+
+.scholarship__thumbnail h6 {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.faq__area .accordion-button {
+    background: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+}
+
+.faq__area .accordion-item {
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.faq__area .accordion-button::after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    transition: var(--bs-accordion-btn-icon-transition);
+    background: none;
+}
+
+.faq__area .accordion-item .accordion-body p {
+    font-size: 18px;
+}
+
+.question__area input,
+.question__area textarea,
+.question__area select {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.question__area input:focus,
+.question__area textarea:focus,
+.question__area select:focus {
+    box-shadow: none;
+}
+
+/* scholarship end */
+
+
 
 /* services start */
 .service__content {
@@ -731,6 +840,143 @@ a.dropdown_button.active {
 
 /* blog end */
 
+/* study abroad start */
+
+.study_country_headline {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.study_country_headline span {
+    font-size: 50px;
+    color: #4555F4;
+    border-bottom: 2px solid;
+}
+
+.country__info p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.single__university__item {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.single__university__item:hover {
+    transform: translateY(-5px);
+}
+
+.single__university__name {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.single__university__thumbnail {
+    margin-right: 10px;
+}
+
+.single__university__thumbnail img {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.single__university__name small {
+    display: block;
+    font-weight: 300;
+    opacity: .8;
+}
+
+.study__facilities h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.study__facilities ul li {
+    list-style: disc;
+    font-size: 17px;
+    transition: var(--transition);
+    margin-bottom: 15px;
+}
+
+.study__facilities ul {
+    margin-left: 50px;
+}
+
+.study__facilities ul li:hover {
+    color: var(--main-color);
+}
+
+.single__course__item {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.single__course__item img {
+    border-radius: 10px 10px 0 0;
+}
+
+.single__course__item h5 {
+    margin-top: 20px;
+}
+
+.single__course__item:hover {
+    transform: translateY(-5px);
+}
+
+.table__heading {
+    background: var(--main-color);
+}
+
+.table__heading tr th {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* 
+.single__course__item {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(209, 210, 230) 0px 8px 24px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.single__course__item h5 {
+    margin-top: 20px;
+}
+
+.single__course__item:hover {
+    transform: translateY(-5px);
+}
+
+.single__table__info {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.single__table__info h5 {
+    padding: 10px;
+} */
+
+/* study abroad end */
+
 /* footer start */
 
 .footer__area {
@@ -787,7 +1033,7 @@ a.dropdown_button.active {
 }
 
 .single__footer__about p {
-    color: #aeb1b8
+    color: #fff
 }
 
 .footer__title {
@@ -801,7 +1047,7 @@ a.dropdown_button.active {
 }
 
 .footer__menu ul li a {
-    color: #aeb1b8;
+    color: #fff;
     text-transform: capitalize;
     font-size: 16px;
     transition: var(--transition);
@@ -813,7 +1059,7 @@ a.dropdown_button.active {
 }
 
 .single__footer__about p a {
-    color: #aeb1b8;
+    color: #fff;
 }
 
 .single__footer__about h6 i {
