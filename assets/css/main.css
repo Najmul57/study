@@ -279,6 +279,7 @@ a.dropdown_button.active {
     display: inline-block;
     border-radius: 50px;
     background: #4555f4;
+    cursor: pointer;
     color: #fff;
     line-height: 1;
     letter-spacing: 2px;
@@ -422,18 +423,21 @@ a.dropdown_button.active {
     padding: 20px 0;
 }
 
-.faq__area .accordion-button {
+.faq__area .accordion-button,
+.admission__area .accordion-button {
     background: var(--main-color);
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.faq__area .accordion-item {
+.faq__area .accordion-item,
+.admission__area .accordion-item {
     margin: 15px 0;
     border-radius: 10px;
 }
 
-.faq__area .accordion-button::after {
+.faq__area .accordion-button::after,
+.admission__area .accordion-button::after {
     content: "\f107";
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
@@ -443,7 +447,8 @@ a.dropdown_button.active {
     background: none;
 }
 
-.faq__area .accordion-item .accordion-body p {
+.faq__area .accordion-item .accordion-body p,
+.admission__area .accordion-item .accordion-body p {
     font-size: 18px;
 }
 
@@ -461,7 +466,6 @@ a.dropdown_button.active {
 }
 
 /* scholarship end */
-
 
 
 /* services start */
@@ -534,6 +538,114 @@ a.dropdown_button.active {
     visibility: visible;
 }
 
+
+.single__accommodation {
+    margin-bottom: 20px;
+}
+
+
+.service__sidebar__thumbnail img {
+    max-width: 68px;
+    margin-right: 10px;
+}
+
+.service__sidebar a {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px 0;
+}
+
+.service__sidebar a:last-child {
+    border-bottom: 0;
+}
+
+.service__sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.service__sidebar {
+    position: sticky;
+    top: 0;
+}
+
+.service__sidebar a:last-child {
+    border-bottom: 0;
+}
+
+.service__sidebar a h6 {
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.admission__service p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.admission__service .accordion-body ul li {
+    font-size: 16px;
+    font-weight: 300;
+    list-style: circle;
+}
+
+.admission__service .accordion-body ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.visa__service__process h2 {
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.visa__service__process p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.visa__service__process ul li i {
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.visa__service__process ul li {
+    margin-bottom: 15px;
+}
+
+.visa__service__process ul li:last-child {
+    margin-bottom: 0;
+}
+
+.visa__service__process {
+    margin-bottom: 50px;
+}
+
+.visa__service__process:last-child {
+    margin-bottom: 0;
+}
+
+.visa__service__process ul {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.english__fluncy__service ul li {
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.english__fluncy__service ul li span {
+    font-weight: 500;
+}
+
 /* services end */
 
 /* university start */
@@ -571,17 +683,20 @@ a.dropdown_button.active {
 }
 
 
+.awards__active .slick-slide,
 .university__active .slick-slide,
 .partnet__active .slick-slide,
 .review__active .slick-slide {
     margin: 0 10px;
 }
 
+.awards__active .slick-list,
 .university__active .slick-list,
 .partnet__active .slick-list,
 .review__active .slick-list {
     margin: 0 -10px;
 }
+
 
 .review__description {
     text-align: center;
@@ -629,6 +744,46 @@ a.dropdown_button.active {
 
 
 /* university end */
+
+/* awards start */
+
+.accolades__list h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.accolades__list {
+    position: sticky;
+    top: 10px;
+}
+
+.accolades__content p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.accolades__list ul li {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px 0;
+}
+
+.accolades__list ul li i {
+    margin-right: 10px;
+}
+
+.accolades__list ul li span {
+    font-size: 16px;
+}
+
+.accolades__list ul li:last-child {
+    border-bottom: 0;
+}
+
+/* awards end */
 
 /* partner start */
 .student__review__area {
@@ -838,7 +993,210 @@ a.dropdown_button.active {
     border-radius: 5px 5px 0 0;
 }
 
+.single__latest__blog img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.single__latest__blog {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 20px;
+}
+
+.single__latest__blog:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.latest__blog__list {
+    position: sticky;
+    top: 10px;
+}
+
+.single__latest__blog h6 {
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.single__latest__blog:hover h6 {
+    color: var(--main-color);
+}
+
 /* blog end */
+
+/* career start */
+.job__card {
+    transition: var(--transition);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.job__card:last-child {
+    margin-bottom: 0;
+}
+
+.job__card:hover {
+    transform: translateY(-5px);
+}
+
+.career__left {
+    width: calc(100% - 150px);
+    padding-right: 30px;
+    border-right: 1px solid var(--main-color);
+}
+
+
+.job__card__right {
+    width: 150px;
+    text-align: right;
+}
+
+.career__left h3 {
+    color: var(--main-color);
+}
+
+.career__left p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.career__left ul {
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.career__left ul li {
+    list-style: disc;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.single__content span a,
+.single__content span {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.single__content {
+    transition: var(--transition);
+}
+
+.single__content:hover {
+    transform: translateY(-5px);
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+    box-shadow: none;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.contact__form {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* career end */
+
+/* about start */
+
+.about__pargraph p {
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.about__heading ul {
+    margin-top: 30px;
+}
+
+.about__heading ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.about__heading ul li i {
+    margin-right: 10px;
+}
+
+/* about end */
+
+/* director start */
+
+.single__director h2 {
+    color: var(--main-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.director__content h2 {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.director__content h2 span {
+    display: block;
+    color: #868686;
+}
+
+.director__content p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* director end */
+
+/* team start */
+
+.single__team h2 {
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.single__team h2 span {
+    display: block;
+    color: #918f8f;
+    text-transform: capitalize;
+    font-size: 50%;
+    margin-top: 10px;
+}
+
+/* team end */
+
+/* contact start */
+
+.single__content i {
+    font-size: 20px;
+    background: var(--main-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+}
+
+.single__content h3 {
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+/* contact end */
 
 /* study abroad start */
 
@@ -929,7 +1287,11 @@ a.dropdown_button.active {
 }
 
 .single__course__item h5 {
-    margin-top: 20px;
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .single__course__item:hover {
@@ -1071,6 +1433,16 @@ a.dropdown_button.active {
     background: #4555F4;
     color: #fff;
     border-top: 1px solid #ddd;
+}
+
+.copyright p {
+    text-align: start;
+}
+
+.copyright span {
+    text-align: end;
+    width: 100%;
+    display: block;
 }
 
 #scrollUp {

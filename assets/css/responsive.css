@@ -119,6 +119,36 @@
         font-size: 20px;
     }
 
+    .job__card {
+        display: block !important;
+    }
+
+    .career__left {
+        width: 100%;
+        border-right: transparent;
+        padding-right: 0;
+    }
+
+    .single__director h2 {
+        font-size: 30px;
+    }
+
+    .director__content h2 {
+        font-size: 20px;
+    }
+
+    .director__content h2 span {
+        font-size: 80%;
+    }
+
+    .copyright p {
+        text-align: center !important;
+    }
+
+    .copyright span {
+        text-align: center !important;
+        margin-top: 10px;
+    }
 
 }
 

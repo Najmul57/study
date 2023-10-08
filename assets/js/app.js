@@ -159,6 +159,65 @@ $('.review__active').slick({
 });
 // university end
 
+
+// featured university start
+$(function (e) {
+  "use strict";
+  e(".awards__active").slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 4,
+    prevArrow: '<i class="fa-solid fa-angle-left"></i>',
+    nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+    slidesToScroll: 1,
+    appendArrows: e(".slick_arrow"),
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        dots: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        dots: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+      }
+    }
+    ]
+  })
+});
+// university end
+
 // scrollup
 $.scrollUp({
   scrollName: 'scrollUp', // Element ID
