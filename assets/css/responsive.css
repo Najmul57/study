@@ -71,6 +71,7 @@
 
     .section__heading h2 {
         font-size: 30px;
+        margin-bottom: 10px;
     }
 
     .section__heading p {
@@ -150,6 +151,29 @@
         margin-top: 10px;
     }
 
+    .event__details ul li {
+        float: inherit;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .event__details h2 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    .social_share ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .row.about__section {
+        padding: 50px 0;
+    }
+
+    .single__director:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 /* Large Mobile :480px. */
